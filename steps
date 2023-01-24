@@ -1,0 +1,20 @@
+ 1 Decide data directory structure
+ 2 Config folder
+ 3 Data Loader file and Augmentation
+    1) Grids and per grids,
+        recursive grids
+        recursive per grids
+        grid optimization (no same class grids)
+        background grids
+        Document this much
+
+    2) Output format and specification (testable segmentation)
+    3) background selection and bag-of-freebees
+    4) Augmentation
+    5) Document Data Pipeline.
+
+#test pipeline
+from data_preperation.pipline import Pipeline
+t = Pipeline("D:\Detection_Classification/runs","D:\Detection_Classification\data")
+
+#create dataloader

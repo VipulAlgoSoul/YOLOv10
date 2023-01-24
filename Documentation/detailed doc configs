@@ -1,0 +1,61 @@
+This contained detailed documentation of process
+
+config/data_config.INI
+
+[DATA]
+--background = True
+	This flag is to add background class and find background bounding boxes
+
+--class_balancing = True
+	This flag is to choose the option for class imbalance mitigation
+
+--augment = {Type1:True, Type2:true}
+	This consider augmenting the data
+
+--Intersection_output = False
+	This flag is to give out intersection outputs, all the grids having class
+	bounding box intersections will be considered while creating outputs
+
+--IOU_output = True
+	This flag is to create output based on IOU
+
+--image_shape = (300,300)
+	Set the input imag shape
+
+--grids = 5
+	The grid number gives the highest number of image divisions
+
+--use_recursive_grids = 1
+	This flag make sure that the number from 1 to grids are considered for anchor regions
+
+--per_grids = 5
+	This gives the aspect ratio division
+
+--use_recursive_pergrids = 1
+	This gives per grids from range 1 to per grids
+
+--grid_jump = 1
+	grid jump defines the jump between grids sequence
+
+--slider_aspect = 1
+	suggest whether aspect sliding to be included
+
+
+[PATH]
+--data_folder = D:\Detection_Classification\data
+	The path where train and test dat is present
+
+--exp_path = D:\Detection_Classification/runs
+	Path where experiment results are saved
+
+[DEBUG]
+--pipeline = 1
+	To run pipeline in debug mode
+--pipeline_help = 0
+	To run pipeline_help in debug mode
+
+[VISUALIZE]
+input_visualize = 1
+
+
+
